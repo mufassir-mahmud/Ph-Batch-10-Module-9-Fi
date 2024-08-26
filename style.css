@@ -6,8 +6,11 @@
     font-family: "Work Sans", sans-serif;
 }
 body{
-    max-width: 1440px;
-    margin: 0 auto;
+    
+}
+header{
+    width: 100%;
+    background-color:  rgba(255, 144, 14, 0.1);
 }
 nav{
     max-width: 1440px;
@@ -35,13 +38,18 @@ nav{
     font-size: 45px;
     font-weight: 700;
 }
+.menu-bar{
+    display: none;
+}
 .banner-section{
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 100px;
 }
 .banner-content{
     text-align: center;
     max-width: 862px;
-    margin: 50px auto;
+    margin: 40px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +76,74 @@ nav{
 .banner-img{
     width: 100%;
     margin: 20px 0;
+    padding-bottom: 20px;
 }
 .banner-img img{
     width: 100%;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.team-section{
+    margin: 80px 0;
+}
+.team-container{
+    display: flex;
+    align-items: center;
+
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+.team-content{
+    max-width: 537px;
+    margin-left: 75px;
+    
+    
+}
+.team-title{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.team-first-title{
+    color: #727272;
+    font-weight: 300;
+
+}
+.team-last-title{
+    color: #FF900E;
+}
+.team-subtitle{
+    color: #727272;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:567px) {
+   
+    .navbar{
+        display: none;
+    }
+    .banner-heading{
+        font-size: 34px;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .team-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .team-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team-content{
+        margin-left: 25px;
+        max-width: 300px;
+        text-align: center;
+    }
 }
